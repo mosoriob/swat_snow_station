@@ -1,0 +1,81 @@
+step: 2
+parameters:
+  SFTMP:
+    default_value: 0
+  SMTMP:
+    default_value: 3
+  SMFMX:
+    default_value: 2
+  SMFMN:
+    default_value: 2
+  TIMP:
+    default_value: 0.1
+configs:
+  basins.bsn:
+    path: TxtInOut/basins.bsn
+    format: .bsn
+code_files:
+  swat670:
+    path: TxtInOut/swat670
+inputs:
+  TxtInOut_zip:
+    path: TxtInOut.zip
+    format: .zip
+  pcp1_pcp:
+    path: TxtInOut/pcp1.pcp
+    format: .pcp
+outputs:
+  hydout:
+    path: TxtInOut/hyd.out
+    format: .out
+  outputhru:
+    path: TxtInOut/output.hru
+    format: .hru
+  outputsed:
+    path: TxtInOut/output.sed
+    format: .sed
+  bmp-riout:
+    path: TxtInOut/bmp-ri.out
+    format: .out
+  inputstd:
+    path: TxtInOut/input.std
+    format: .std
+  outputstd:
+    path: TxtInOut/output.std
+    format: .std
+  finfin:
+    path: TxtInOut/fin.fin
+    format: .fin
+  septicout:
+    path: TxtInOut/septic.out
+    format: .out
+  chandeg:
+    path: TxtInOut/chan.deg
+    format: .deg
+  outputrch:
+    path: TxtInOut/output.rch
+    format: .rch
+  outputsub:
+    path: TxtInOut/output.sub
+    format: .sub
+  bmp-sedfilout:
+    path: TxtInOut/bmp-sedfil.out
+    format: .out
+  outputrsv:
+    path: TxtInOut/output.rsv
+    format: .rsv
+  watoutdat:
+    path: TxtInOut/watout.dat
+    format: .dat
+commands: '
+
+  cp -rv swat670 TxtInOut/swat670
+
+  cp -rv pcp1.pcp TxtInOut/pcp1.pcp
+
+
+  pushd TxtInOut
+
+  ./swat670
+
+  popd'
