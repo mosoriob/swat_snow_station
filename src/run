@@ -1,27 +1,20 @@
 #!/bin/bash
 BASEDIR=$PWD
-. $BASEDIR/io.sh 2 5 14 "$@"
+. $BASEDIR/io.sh 1 1 14 "$@"
 CURDIR=`pwd`
 set -e
 ## INPUTS VARIABLES
-TxtInOut_zip=${INPUTS1}
-pcp1_pcp=${INPUTS2}
+txtinout_zip=${INPUTS1}
 
 
 ## PARAMETERS VARIABLES
-SFTMP=${PARAMS1}
-SMTMP=${PARAMS2}
-SMFMX=${PARAMS3}
-SMFMN=${PARAMS4}
-TIMP=${PARAMS5}
+p1=${PARAMS1}
 
 
 set -xe
 
 ####### WRITE YOUR INVOCATION LINE AFTER THIS COMMENT
 
-cp -rv swat670 TxtInOut/swat670
-cp -rv pcp1.pcp TxtInOut/pcp1.pcp
 
 pushd TxtInOut
 ./swat670

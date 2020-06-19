@@ -1,0 +1,496 @@
+!!python/object:modelcatalog.models.model_configuration.ModelConfiguration
+_author: null
+_citation: null
+_compatible_visualization_software: null
+_contributor: null
+_date_created: null
+_date_published: null
+_description: null
+_had_primary_source: null
+_has_assumption: null
+_has_causal_diagram: null
+_has_component_location:
+- https://raw.githubusercontent.com/sirspock/swat_snow_station/master/mint_component.zip
+_has_constraint: null
+_has_contact_person: null
+_has_documentation: null
+_has_download_url: null
+_has_equation: null
+_has_example: null
+_has_execution_command: null
+_has_explanation_diagram: null
+_has_faq: null
+_has_funding: null
+_has_grid: null
+_has_implementation_script_location: null
+_has_input:
+- !!python/object:modelcatalog.models.dataset_specification.DatasetSpecification
+  _description: null
+  _has_dimensionality: null
+  _has_file_structure: null
+  _has_fixed_resource:
+  - data_catalog_identifier: FFF-3s5c112e-c7ae-4cda-ba23-2e4f2286a18o
+    description: null
+    id: https://w3id.org/okn/i/mint/
+    label: null
+    type: null
+    value:
+    - /Users/mosorio/tmp/swat_n/mic/data/TxtInOut.zip
+  _has_format:
+  - .zip
+  _has_presentation: null
+  _id: https://w3id.org/okn/i/mint/1ae6e523-9810-4e99-8363-da6f745e4139
+  _label:
+  - TxtInOut.zip
+  _position:
+  - 1
+  _type:
+  - DatasetSpecification
+  discriminator: null
+- !!python/object:modelcatalog.models.dataset_specification.DatasetSpecification
+  _description: null
+  _has_dimensionality: null
+  _has_file_structure: null
+  _has_fixed_resource:
+  - data_catalog_identifier: FFF-3s5c112e-c7ae-4cda-ba23-2e4f2286a18o
+    description: null
+    id: https://w3id.org/okn/i/mint/
+    label: null
+    type: null
+    value:
+    - /Users/mosorio/tmp/swat_n/mic/data/pcp1.pcp
+  _has_format:
+  - .pcp
+  _has_presentation: null
+  _id: https://w3id.org/okn/i/mint/f3f62383-29c2-42d7-abbc-2b616bb0fe2c
+  _label:
+  - pcp1.pcp
+  _position:
+  - 2
+  _type:
+  - DatasetSpecification
+  discriminator: null
+_has_installation_instructions: null
+_has_model_category: null
+_has_model_result_table: null
+_has_output:
+- !!python/object:modelcatalog.models.dataset_specification.DatasetSpecification
+  _description: null
+  _has_dimensionality: null
+  _has_file_structure: null
+  _has_fixed_resource: null
+  _has_format:
+  - .out
+  _has_presentation: null
+  _id: https://w3id.org/okn/i/mint/990faed7-dc5e-4696-a005-fb3207a24929
+  _label:
+  - bmp-riout
+  _position:
+  - 4
+  _type:
+  - DatasetSpecification
+  discriminator: null
+- !!python/object:modelcatalog.models.dataset_specification.DatasetSpecification
+  _description: null
+  _has_dimensionality: null
+  _has_file_structure: null
+  _has_fixed_resource: null
+  _has_format:
+  - .std
+  _has_presentation: null
+  _id: https://w3id.org/okn/i/mint/373d96c6-cab0-467f-a15d-3e2300e784ec
+  _label:
+  - inputstd
+  _position:
+  - 5
+  _type:
+  - DatasetSpecification
+  discriminator: null
+- !!python/object:modelcatalog.models.dataset_specification.DatasetSpecification
+  _description: null
+  _has_dimensionality: null
+  _has_file_structure: null
+  _has_fixed_resource: null
+  _has_format:
+  - .out
+  _has_presentation: null
+  _id: https://w3id.org/okn/i/mint/fa185cc6-585f-4f05-833b-c754feaf7d92
+  _label:
+  - bmp-sedfilout
+  _position:
+  - 12
+  _type:
+  - DatasetSpecification
+  discriminator: null
+- !!python/object:modelcatalog.models.dataset_specification.DatasetSpecification
+  _description: null
+  _has_dimensionality: null
+  _has_file_structure: null
+  _has_fixed_resource: null
+  _has_format:
+  - .rch
+  _has_presentation: null
+  _id: https://w3id.org/okn/i/mint/ce33a1ee-3292-4250-8fb7-c763fe856573
+  _label:
+  - outputrch
+  _position:
+  - 10
+  _type:
+  - DatasetSpecification
+  discriminator: null
+- !!python/object:modelcatalog.models.dataset_specification.DatasetSpecification
+  _description: null
+  _has_dimensionality: null
+  _has_file_structure: null
+  _has_fixed_resource: null
+  _has_format:
+  - .hru
+  _has_presentation: null
+  _id: https://w3id.org/okn/i/mint/5320b635-3290-4eab-85ef-b197d45853ec
+  _label:
+  - outputhru
+  _position:
+  - 2
+  _type:
+  - DatasetSpecification
+  discriminator: null
+- !!python/object:modelcatalog.models.dataset_specification.DatasetSpecification
+  _description: null
+  _has_dimensionality: null
+  _has_file_structure: null
+  _has_fixed_resource: null
+  _has_format:
+  - .deg
+  _has_presentation: null
+  _id: https://w3id.org/okn/i/mint/d0954ece-0dc4-4f0f-9e12-fd3965067186
+  _label:
+  - chandeg
+  _position:
+  - 9
+  _type:
+  - DatasetSpecification
+  discriminator: null
+- !!python/object:modelcatalog.models.dataset_specification.DatasetSpecification
+  _description: null
+  _has_dimensionality: null
+  _has_file_structure: null
+  _has_fixed_resource: null
+  _has_format:
+  - .out
+  _has_presentation: null
+  _id: https://w3id.org/okn/i/mint/85a483b4-f960-4a5e-8096-c883eafd87bc
+  _label:
+  - septicout
+  _position:
+  - 8
+  _type:
+  - DatasetSpecification
+  discriminator: null
+- !!python/object:modelcatalog.models.dataset_specification.DatasetSpecification
+  _description: null
+  _has_dimensionality: null
+  _has_file_structure: null
+  _has_fixed_resource: null
+  _has_format:
+  - .out
+  _has_presentation: null
+  _id: https://w3id.org/okn/i/mint/086032df-492c-411d-92be-ac214eb4e204
+  _label:
+  - hydout
+  _position:
+  - 1
+  _type:
+  - DatasetSpecification
+  discriminator: null
+- !!python/object:modelcatalog.models.dataset_specification.DatasetSpecification
+  _description: null
+  _has_dimensionality: null
+  _has_file_structure: null
+  _has_fixed_resource: null
+  _has_format:
+  - .std
+  _has_presentation: null
+  _id: https://w3id.org/okn/i/mint/774d0b33-a7dc-4879-bf6b-048677512e75
+  _label:
+  - outputstd
+  _position:
+  - 6
+  _type:
+  - DatasetSpecification
+  discriminator: null
+- !!python/object:modelcatalog.models.dataset_specification.DatasetSpecification
+  _description: null
+  _has_dimensionality: null
+  _has_file_structure: null
+  _has_fixed_resource: null
+  _has_format:
+  - .rsv
+  _has_presentation: null
+  _id: https://w3id.org/okn/i/mint/a815cc6a-ce4a-4180-b38e-3e77485432f9
+  _label:
+  - outputrsv
+  _position:
+  - 13
+  _type:
+  - DatasetSpecification
+  discriminator: null
+- !!python/object:modelcatalog.models.dataset_specification.DatasetSpecification
+  _description: null
+  _has_dimensionality: null
+  _has_file_structure: null
+  _has_fixed_resource: null
+  _has_format:
+  - .fin
+  _has_presentation: null
+  _id: https://w3id.org/okn/i/mint/2d13818f-a248-44b7-ab5f-15ef672146b7
+  _label:
+  - finfin
+  _position:
+  - 7
+  _type:
+  - DatasetSpecification
+  discriminator: null
+- !!python/object:modelcatalog.models.dataset_specification.DatasetSpecification
+  _description: null
+  _has_dimensionality: null
+  _has_file_structure: null
+  _has_fixed_resource: null
+  _has_format:
+  - .dat
+  _has_presentation: null
+  _id: https://w3id.org/okn/i/mint/21f49875-cb06-464e-b07c-359ada8771e0
+  _label:
+  - watoutdat
+  _position:
+  - 14
+  _type:
+  - DatasetSpecification
+  discriminator: null
+- !!python/object:modelcatalog.models.dataset_specification.DatasetSpecification
+  _description: null
+  _has_dimensionality: null
+  _has_file_structure: null
+  _has_fixed_resource: null
+  _has_format:
+  - .sed
+  _has_presentation: null
+  _id: https://w3id.org/okn/i/mint/d3c67a87-1f40-4ac1-9f88-cfd3a068667a
+  _label:
+  - outputsed
+  _position:
+  - 3
+  _type:
+  - DatasetSpecification
+  discriminator: null
+- !!python/object:modelcatalog.models.dataset_specification.DatasetSpecification
+  _description: null
+  _has_dimensionality: null
+  _has_file_structure: null
+  _has_fixed_resource: null
+  _has_format:
+  - .sub
+  _has_presentation: null
+  _id: https://w3id.org/okn/i/mint/cfe0b3ee-dc75-4628-885d-71dcb5709e48
+  _label:
+  - outputsub
+  _position:
+  - 11
+  _type:
+  - DatasetSpecification
+  discriminator: null
+_has_output_time_interval: null
+_has_parameter:
+- !!python/object:modelcatalog.models.parameter.Parameter
+  _adjusts_variable: null
+  _description: null
+  _has_accepted_values: null
+  _has_data_type: null
+  _has_default_value:
+  - 2
+  _has_fixed_value: null
+  _has_maximum_accepted_value: null
+  _has_minimum_accepted_value: null
+  _has_presentation: null
+  _has_step_size: null
+  _id: https://w3id.org/okn/i/mint/7e42d486-81dc-49a4-8053-b4589613b90e
+  _label:
+  - SMFMX
+  _position:
+  - 3
+  _recommended_increment: null
+  _relevant_for_intervention: null
+  _type:
+  - Parameter
+  _uses_unit: null
+  discriminator: null
+- !!python/object:modelcatalog.models.parameter.Parameter
+  _adjusts_variable: null
+  _description: null
+  _has_accepted_values: null
+  _has_data_type: null
+  _has_default_value:
+  - 3
+  _has_fixed_value: null
+  _has_maximum_accepted_value: null
+  _has_minimum_accepted_value: null
+  _has_presentation: null
+  _has_step_size: null
+  _id: https://w3id.org/okn/i/mint/b71a2539-aee3-498a-88eb-628739c81699
+  _label:
+  - SMTMP
+  _position:
+  - 2
+  _recommended_increment: null
+  _relevant_for_intervention: null
+  _type:
+  - Parameter
+  _uses_unit: null
+  discriminator: null
+- !!python/object:modelcatalog.models.parameter.Parameter
+  _adjusts_variable: null
+  _description: null
+  _has_accepted_values: null
+  _has_data_type: null
+  _has_default_value:
+  - 2
+  _has_fixed_value: null
+  _has_maximum_accepted_value: null
+  _has_minimum_accepted_value: null
+  _has_presentation: null
+  _has_step_size: null
+  _id: https://w3id.org/okn/i/mint/cfd6ced4-c915-448f-bb75-9b19e0114eed
+  _label:
+  - SMFMN
+  _position:
+  - 4
+  _recommended_increment: null
+  _relevant_for_intervention: null
+  _type:
+  - Parameter
+  _uses_unit: null
+  discriminator: null
+- !!python/object:modelcatalog.models.parameter.Parameter
+  _adjusts_variable: null
+  _description: null
+  _has_accepted_values: null
+  _has_data_type: null
+  _has_default_value:
+  - 0
+  _has_fixed_value: null
+  _has_maximum_accepted_value: null
+  _has_minimum_accepted_value: null
+  _has_presentation: null
+  _has_step_size: null
+  _id: https://w3id.org/okn/i/mint/1cbe365c-dc23-455d-9cd2-574459c4dd1f
+  _label:
+  - SFTMP
+  _position:
+  - 1
+  _recommended_increment: null
+  _relevant_for_intervention: null
+  _type:
+  - Parameter
+  _uses_unit: null
+  discriminator: null
+- !!python/object:modelcatalog.models.parameter.Parameter
+  _adjusts_variable: null
+  _description: null
+  _has_accepted_values: null
+  _has_data_type: null
+  _has_default_value:
+  - 0.1
+  _has_fixed_value: null
+  _has_maximum_accepted_value: null
+  _has_minimum_accepted_value: null
+  _has_presentation: null
+  _has_step_size: null
+  _id: https://w3id.org/okn/i/mint/1d171512-8114-4f31-917a-f7b3b4d55496
+  _label:
+  - TIMP
+  _position:
+  - 5
+  _recommended_increment: null
+  _relevant_for_intervention: null
+  _type:
+  - Parameter
+  _uses_unit: null
+  discriminator: null
+_has_process: null
+_has_purpose: null
+_has_region: null
+_has_sample_execution: null
+_has_sample_result: null
+_has_sample_visualization: null
+_has_setup: null
+_has_software_image:
+- !!python/object:modelcatalog.models.software_image.SoftwareImage
+  _author: null
+  _citation: null
+  _compatible_visualization_software: null
+  _contributor: null
+  _date_created: null
+  _date_published: null
+  _description: null
+  _had_primary_source: null
+  _has_assumption: null
+  _has_contact_person: null
+  _has_documentation: null
+  _has_download_url: null
+  _has_example: null
+  _has_execution_command: null
+  _has_faq: null
+  _has_funding: null
+  _has_installation_instructions: null
+  _has_purpose: null
+  _has_sample_visualization: null
+  _has_source_code: null
+  _has_typical_data_source: null
+  _has_usage_notes: null
+  _has_version: null
+  _id: https://w3id.org/okn/i/mint/c2d5020d-d872-4fd1-b789-38d9088dff57
+  _identifier: null
+  _keywords: null
+  _label:
+  - mosorio/swat_snow_station:20.6.6
+  _license: null
+  _logo: null
+  _memory_requirements: null
+  _operating_systems: null
+  _processor_requirements: null
+  _publisher: null
+  _reference_publication: null
+  _screenshot: null
+  _short_description: null
+  _software_requirements: null
+  _support_details: null
+  _type:
+  - SoftwareImage
+  _website: null
+  discriminator: null
+_has_source_code: null
+_has_support_script_location: null
+_has_typical_data_source: null
+_has_usage_notes: null
+_has_version: null
+_id: https://w3id.org/okn/i/mint/c3c5c2c8-a049-4ca2-b01e-9bd17479556a
+_identifier: null
+_keywords: null
+_label:
+- mic
+_license: null
+_logo: null
+_memory_requirements: null
+_operating_systems: null
+_processor_requirements: null
+_publisher: null
+_reference_publication: null
+_screenshot: null
+_short_description: null
+_software_requirements: null
+_support_details: null
+_tag: null
+_type:
+- ModelConfiguration
+_useful_for_calculating_index: null
+_website: null
+discriminator: null

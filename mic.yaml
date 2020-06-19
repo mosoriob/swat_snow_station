@@ -1,85 +1,71 @@
-step: 2
-parameters:
-  SFTMP:
-    default_value: 0
-  SMTMP:
-    default_value: 3
-  SMFMX:
-    default_value: 2
-  SMFMN:
-    default_value: 2
-  TIMP:
-    default_value: 0.1
-configs:
-  basins.bsn:
-    path: TxtInOut/basins.bsn
-    format: .bsn
-code_files:
-  swat670:
-    path: TxtInOut/swat670
+step: 1
+name: test
+outputs:
+  output_std:
+    path: TxtInOut/output.std
+    format: std
+  bmp-ri_out:
+    path: TxtInOut/bmp-ri.out
+    format: out
+  output_sub:
+    path: TxtInOut/output.sub
+    format: sub
+  output_rsv:
+    path: TxtInOut/output.rsv
+    format: rsv
+  output_rch:
+    path: TxtInOut/output.rch
+    format: rch
+  output_hru:
+    path: TxtInOut/output.hru
+    format: hru
+  watout_dat:
+    path: TxtInOut/watout.dat
+    format: dat
+  fin_fin:
+    path: TxtInOut/fin.fin
+    format: fin
+  output_sed:
+    path: TxtInOut/output.sed
+    format: sed
+  chan_deg:
+    path: TxtInOut/chan.deg
+    format: deg
+  bmp-sedfil_out:
+    path: TxtInOut/bmp-sedfil.out
+    format: out
+  hyd_out:
+    path: TxtInOut/hyd.out
+    format: out
+  input_std:
+    path: TxtInOut/input.std
+    format: std
+  septic_out:
+    path: TxtInOut/septic.out
+    format: out
+  a:
+    path: a/a
+    format: ''
+  c:
+    path: a/c
+    format: ''
+  d:
+    path: a/d
+    format: ''
+  b:
+    path: a/b
+    format: ''
+  trace_sqlite3:
+    path: a/.reprozip-trace/trace.sqlite3
+    format: sqlite3
+  config_yml:
+    path: a/.reprozip-trace/config.yml
+    format: yml
 inputs:
   txtinout_zip:
     path: TxtInOut.zip
     format: zip
-  pcp1_pcp:
-    path: pcp1.pcp
-    format: pcp
-outputs:
-  hydout:
-    path: TxtInOut/hyd.out
-    format: .out
-  outputhru:
-    path: TxtInOut/output.hru
-    format: .hru
-  outputsed:
-    path: TxtInOut/output.sed
-    format: .sed
-  bmp-riout:
-    path: TxtInOut/bmp-ri.out
-    format: .out
-  inputstd:
-    path: TxtInOut/input.std
-    format: .std
-  outputstd:
-    path: TxtInOut/output.std
-    format: .std
-  finfin:
-    path: TxtInOut/fin.fin
-    format: .fin
-  septicout:
-    path: TxtInOut/septic.out
-    format: .out
-  chandeg:
-    path: TxtInOut/chan.deg
-    format: .deg
-  outputrch:
-    path: TxtInOut/output.rch
-    format: .rch
-  outputsub:
-    path: TxtInOut/output.sub
-    format: .sub
-  bmp-sedfilout:
-    path: TxtInOut/bmp-sedfil.out
-    format: .out
-  outputrsv:
-    path: TxtInOut/output.rsv
-    format: .rsv
-  watoutdat:
-    path: TxtInOut/watout.dat
-    format: .dat
-commands: '
-
-  cp -rv swat670 TxtInOut/swat670
-
-  cp -rv pcp1.pcp TxtInOut/pcp1.pcp
-
-
-  pushd TxtInOut
-
-  ./swat670
-
-  popd'
-github_repo_url: https://github.com/sirspock/swat_snow_station.git
-version: 20.6.7
-mint_component_url: https://raw.githubusercontent.com/sirspock/swat_snow_station/master/mint_component.zip
-docker_image: mosorio/swat_snow_station:20.6.7
+  b:
+    path: a/b
+    format: ''
+code_files: {}

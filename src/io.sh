@@ -77,24 +77,14 @@ for ((i=1; i<=PNUM; i++)); do typeset PARAMS$i=$(echo ${PARAMS[$i]}); done
 for ((i=1; i<=ONUM; i++)); do typeset OUTPUTS$i=$(echo ${OUTPUTS[$i]}); done
 IFS=' '
 
-TxtInOut_zip=${INPUTS1}
-export TxtInOut_zip
-pcp1_pcp=${INPUTS2}
-export pcp1_pcp
+txtinout_zip=${INPUTS1}
+export txtinout_zip
 
 
 
 ## PARAMETERS VARIABLES
-SFTMP=${PARAMS1}
-export  SFTMP
-SMTMP=${PARAMS2}
-export  SMTMP
-SMFMX=${PARAMS3}
-export  SMFMX
-SMFMN=${PARAMS4}
-export  SMFMN
-TIMP=${PARAMS5}
-export  TIMP
+p1=${PARAMS1}
+export  p1
 
 
 
