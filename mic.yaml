@@ -1,5 +1,5 @@
 step: 1
-name: test
+name: testv2test
 outputs:
   output_std:
     path: TxtInOut/output.std
