@@ -1,4 +1,5 @@
 step: 2
+name: "swat_snow_test"
 parameters:
   SFTMP:
     default_value: 0
