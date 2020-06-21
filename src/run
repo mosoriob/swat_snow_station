@@ -1,14 +1,21 @@
 #!/bin/bash
-BASEDIR=$PWD
-. $BASEDIR/io.sh 1 1 14 "$@"
-CURDIR=`pwd`
+set +x
 set -e
+. .colors.sh
+
+BASEDIR=$PWD
+. $BASEDIR/io.sh 1 5 14 "$@"
+CURDIR=`pwd`
 ## INPUTS VARIABLES
 txtinout_zip=${INPUTS1}
 
 
 ## PARAMETERS VARIABLES
-p1=${PARAMS1}
+SFTMP=${PARAMS1}
+SMTMP=${PARAMS2}
+SMFMX=${PARAMS3}
+SMFMN=${PARAMS4}
+TIMP=${PARAMS5}
 
 
 set -xe
@@ -20,8 +27,8 @@ pushd TxtInOut
 ./swat670
 popd
 
-
+set +x
+echo -e "$(c G)[success] The model has exited with code SUCCESS"
 ####### WRITE YOUR INVOCATION LINE BEFORE THIS COMMENT
-set -e
 cd $BASEDIR
 . $BASEDIR/output.sh

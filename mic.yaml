@@ -1,71 +1,72 @@
-step: 1
-name: testv2test
-outputs:
-  output_std:
-    path: TxtInOut/output.std
-    format: std
-  bmp-ri_out:
-    path: TxtInOut/bmp-ri.out
-    format: out
-  output_sub:
-    path: TxtInOut/output.sub
-    format: sub
-  output_rsv:
-    path: TxtInOut/output.rsv
-    format: rsv
-  output_rch:
-    path: TxtInOut/output.rch
-    format: rch
-  output_hru:
-    path: TxtInOut/output.hru
-    format: hru
-  watout_dat:
-    path: TxtInOut/watout.dat
-    format: dat
-  fin_fin:
-    path: TxtInOut/fin.fin
-    format: fin
-  output_sed:
-    path: TxtInOut/output.sed
-    format: sed
-  chan_deg:
-    path: TxtInOut/chan.deg
-    format: deg
-  bmp-sedfil_out:
-    path: TxtInOut/bmp-sedfil.out
-    format: out
-  hyd_out:
-    path: TxtInOut/hyd.out
-    format: out
-  input_std:
-    path: TxtInOut/input.std
-    format: std
-  septic_out:
-    path: TxtInOut/septic.out
-    format: out
-  a:
-    path: a/a
-    format: ''
-  c:
-    path: a/c
-    format: ''
-  d:
-    path: a/d
-    format: ''
-  b:
-    path: a/b
-    format: ''
-  trace_sqlite3:
-    path: a/.reprozip-trace/trace.sqlite3
-    format: sqlite3
-  config_yml:
-    path: a/.reprozip-trace/config.yml
-    format: yml
+step: 2
+parameters:
+  SFTMP:
+    default_value: 0
+  SMTMP:
+    default_value: 3
+  SMFMX:
+    default_value: 2
+  SMFMN:
+    default_value: 2
+  TIMP:
+    default_value: 0.1
+configs:
+  basins.bsn:
+    path: TxtInOut/basins.bsn
+    format: .bsn
+code_files: {}
 inputs:
   txtinout_zip:
     path: TxtInOut.zip
     format: zip
-  b:
-    path: a/b
-    format: ''
-code_files: {}
+outputs:
+  hyd_out:
+    path: TxtInOut/hyd.out
+    format: out
+  chan_deg:
+    path: TxtInOut/chan.deg
+    format: deg
+  output_rsv:
+    path: TxtInOut/output.rsv
+    format: rsv
+  output_sed:
+    path: TxtInOut/output.sed
+    format: sed
+  watout_dat:
+    path: TxtInOut/watout.dat
+    format: dat
+  septic_out:
+    path: TxtInOut/septic.out
+    format: out
+  bmp-ri_out:
+    path: TxtInOut/bmp-ri.out
+    format: out
+  bmp-sedfil_out:
+    path: TxtInOut/bmp-sedfil.out
+    format: out
+  output_hru:
+    path: TxtInOut/output.hru
+    format: hru
+  input_std:
+    path: TxtInOut/input.std
+    format: std
+  fin_fin:
+    path: TxtInOut/fin.fin
+    format: fin
+  output_rch:
+    path: TxtInOut/output.rch
+    format: rch
+  output_std:
+    path: TxtInOut/output.std
+    format: std
+  output_sub:
+    path: TxtInOut/output.sub
+    format: sub
+commands: '
+
+
+  pushd TxtInOut
+
+  ./swat670
+
+  popd'

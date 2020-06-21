@@ -83,8 +83,16 @@ export txtinout_zip
 
 
 ## PARAMETERS VARIABLES
-p1=${PARAMS1}
-export  p1
+SFTMP=${PARAMS1}
+export  SFTMP
+SMTMP=${PARAMS2}
+export  SMTMP
+SMFMX=${PARAMS3}
+export  SMFMX
+SMFMN=${PARAMS4}
+export  SMFMN
+TIMP=${PARAMS5}
+export  TIMP
 
 
 
