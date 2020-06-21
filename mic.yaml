@@ -1,5 +1,5 @@
 step: 2
-name: "swat_snow_test"
+name: swat_snow_test
 parameters:
   SFTMP:
     default_value: 0
@@ -71,3 +71,7 @@ commands: '
   ./swat670
 
   popd'
+github_repo_url: https://github.com/sirspock/swat_snow_station.git
+version: 20.6.18
+mint_component_url: https://raw.githubusercontent.com/sirspock/swat_snow_station/master/mint_component.zip
+docker_image: swat_snow_test
